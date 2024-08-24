@@ -1,0 +1,59 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.IconosDropdown{
+  width: 100%;
+  text-align: right;  
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.DropdownContent{
+  display: none;
+  position: absolute;
+  background-color: #FCFAF1;
+  border: 0px solid;
+  border-radius: 8px;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.SubIconos{
+  vertical-align: middle;
+  padding-right: 2%;
+}
+
+.DropdownContent a{
+  color: #222831;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.DropdownContent a:hover {
+  background-color: #dbdada;
+}
+
+.Dropdown:hover .DropdownContent{
+  display: block;
+  align-items: center;
+}

@@ -1,0 +1,182 @@
+/* Colores Beige #FEF2E8 | Morado #BC70FA | Verde #C4FA86 | Azul #6BC8FA | Rosado #FA9090 */
+
+@font-face {
+	font-family: FamiljenGrotesk-Variable;
+	src: url(../../../assets/FamiljenGrotesk-Variable.ttf);
+}
+
+@media screen and (max-width: 700px){
+    .footer {
+        flex-direction: column;
+        height: auto !important;
+    }
+    
+    .redessociales{
+        flex-direction: column;
+    }
+    
+    .icono{
+        padding-left: 40% !important;
+        padding-top: 10% !important;
+        padding-bottom: 10% !important;
+    }
+
+    .datos{
+        display: none !important;
+    }
+
+    .contenedor{
+        display: block !important;
+    }
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: #FEF2E8;
+}
+
+.presentacion {
+    text-align: center;
+    grid-area: 1 / 1 / span 1 / span 3;
+  }
+
+.habilidades_idiomas, .estudio{
+    margin: 4%;
+}
+
+.habilidades_idiomas{
+    padding: 6%;
+    border: 0px solid;
+    border-radius: 8px;
+    background-color: #FA9090;
+    color: #FEF2E8;
+}
+
+.footer{
+    background-color: #ca8cfd;
+    height: 110px;
+    width: 100%;
+    grid-column: 1 / span 3;
+    align-self: end;
+    display: flex;
+    /* bottom: 0;
+    position: fixed; */
+  }
+
+.foto{
+    width: 250px; 
+    height: 250px;
+    border-radius:100%;
+    border: 8px solid #BC70FA;
+    transition: width 2s, height 2s, transform 2s;
+    margin-bottom: 20px;
+}
+
+.foto:hover{
+    transform: rotate(360deg);
+}
+
+.listahabilidades, .tipografiafooter_1, .tipografiafooter_2, h1, h2, p, table{
+    font-family: FamiljenGrotesk-Variable;
+}
+
+.listahabilidades, .tipografiafooter_1{
+    font-size: 20px;
+}
+
+.titulotabla, h3{
+    font-family: FamiljenGrotesk-Variable;
+    font-size: 30px;
+}   
+
+.titulotabla{
+    background-color: #6BC8FA;
+    color: #FEF2E8;
+    font-weight: bold;
+    border: 0px solid;
+    border-radius: 8px;
+}
+
+.iconos{
+    width: 94%;
+    height: auto;
+    margin: 2%;
+}
+
+table{
+    width: auto;
+    height: 86%;
+}
+
+table, th, td {
+    border: 6px solid #FEF2E8;
+    border-collapse: collapse;
+    border-radius: 14px;
+    padding: 8px;
+  }
+  
+th:nth-child(odd),td:nth-child(odd) {
+    background-color: rgba(107, 200, 250, 0.5);
+  }
+
+h1{
+    color: #BC70FA;
+    font-size: 46px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+h2{
+    color: #6BC8FA;
+    font-size: 34px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+h3{
+    color: #FEF2E8;
+    margin: auto;
+}
+
+p{
+    background-color: #FA9090 0.8;
+    color: #FEF2E8;
+}
+
+/* footer */
+  
+.icono{
+    padding-left: 8%;
+    padding-top: 1%;
+  }
+  
+.datos{
+    margin-left: 50px;
+    display: flex;
+  }
+  
+.redessociales{
+    display: flex;
+    align-items: center;
+    margin: 2%;
+  }
+  
+.logoredsocial{
+    width: 40px;
+    height: auto;
+    margin-right: 6%;
+    margin-left: 6%;
+  }
+  
+.tipografiafooter_1, .tipografiafooter_2{
+    color: #FEF2E8;
+  }
+    
+.tipografiafooter_2{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 28px;
+    line-height: 1.6;
+  }

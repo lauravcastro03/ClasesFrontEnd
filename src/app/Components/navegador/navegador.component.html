@@ -1,0 +1,83 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="/Presentacion">Presentación</a>
+      <a mat-list-item href="/Cronograma">Cronograma</a>
+      <a mat-list-item href="/DivsResponsive">Divs responsive</a>
+      <a mat-list-item href="/Transiciones">Transiciones</a>
+      <a mat-list-item href="/Tablaesquematica">Tabla esquemática</a>
+      <a mat-list-item href="/Hojavida">Hoja de vida</a>
+      <a mat-list-item href="/Formulario">Formulario</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="secundary">
+      @if (isHandset$ | async) {
+        <button>
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+      }
+      <span>Actividades Curso FrontEnd (UX)</span>
+
+      <!-- Actividad de iconos dropdown -->
+      <div class="IconosDropdown">
+        <span class="Dropdown">
+        <button mat-icon-button>
+          <mat-icon matBadge="3">notifications</mat-icon>
+        </button>
+        <div class="DropdownContent">
+          <a href="https://acortar.link/NszJoo">
+            <mat-icon class="SubIconos">update</mat-icon>
+            Nueva actualización</a>
+          <a href="https://acortar.link/qUfrzG">
+            <mat-icon class="SubIconos">touch_app</mat-icon>
+            Conoce las nuevas funcionalidades</a>
+          <a href="https://acortar.link/4vxlOR">
+            <mat-icon class="SubIconos">thumb_up</mat-icon>
+            ¡Te damos la bienvenida!</a>
+        </div>
+      </span>
+      <span class="Dropdown">
+        <button mat-icon-button class="Dropdown_2">
+          <mat-icon matBadge="2">message</mat-icon>
+        </button>
+        <div class="DropdownContent">
+          <a href="https://acortar.link/xr2fdD">
+            <mat-icon class="SubIconos">mark_email_unread</mat-icon>
+            Nuevo mensaje de Carlitos</a>
+          <a href="https://acortar.link/8KpRm3">
+            <mat-icon class="SubIconos">mms</mat-icon>
+            Juanita adjuntó una foto</a>
+          </div>
+      </span>
+      <span class="Dropdown">
+        <button mat-icon-button>
+          <mat-icon>person</mat-icon>
+        </button>
+        <div class="DropdownContent">
+          <a href="https://acortar.link/tvFRuK">
+            <mat-icon class="SubIconos">settings</mat-icon>
+            Configuración</a>
+            <a href="https://acortar.link/b2TtN0">
+            <mat-icon class="SubIconos">contact_support</mat-icon>
+            Acerca de</a>
+          <a href="https://acortar.link/eCZFHB">
+            <mat-icon class="SubIconos">exit_to_app</mat-icon>
+            Cerrar sesión</a>
+        </div>
+      </span>
+      </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+

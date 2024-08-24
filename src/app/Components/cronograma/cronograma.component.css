@@ -1,0 +1,27 @@
+.gen{
+    background-color: #FBF6E2;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo{
+    background-color: #131842;
+    color: #FBF6E2;
+    font-weight: bold;
+}
+
+.estilotabla{
+    width: 100%;
+    background-color: #ECCEAE;
+}
+
+table,th,td{
+    border: 4px solid #FBF6E2;
+    border-collapse: collapse;
+    padding: 6px;
+    align-items: left;
+}
+
+th:nth-child(even),td:nth-child(even){
+    background-color: #f38f76;
+}

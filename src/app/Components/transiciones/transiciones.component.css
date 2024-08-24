@@ -1,0 +1,58 @@
+.contenedor:hover{
+    display: flex
+  }
+  
+  .atributosgeneral{
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    color: rgb(252, 246, 242);
+    transition: width 2s, height 2s;
+  }
+  
+  #atributos1{
+    border: 10px solid rgb(79, 126, 213);
+    border-radius: 6px;
+    background-color: cornflowerblue;
+  }
+  
+  #atributos1:hover {
+    width: 200px;
+    border: 20px dashed coral;
+    border-radius: 0px;
+    background-color: rgb(255, 151, 113);
+    color: rgb(0, 0, 0);
+    transform: scale(1.02);
+  }
+  
+  #atributos2{
+    border: 10px dashed rgb(213, 79, 182);
+    border-radius: 6px;
+    background-color: rgb(232, 96, 200);
+  }
+  
+  #atributos2:hover {
+    width: 200px;
+    border: 20px solid rgb(132, 71, 253);
+    border-radius: 0px;
+    background-color: rgb(155, 107, 253);
+    color: rgb(0, 0, 0);
+    transform: scale(1.02);
+  }
+  
+  #atributos3{
+    border: 10px solid rgb(59, 185, 135);
+    border-radius: 6px;
+    background-color: rgb(75, 207, 154);
+  }
+  
+  #atributos3:hover {
+    width: 200px;
+    border: 20px dashed rgb(253, 71, 71);
+    border-radius: 0px;
+    background-color: rgb(255, 102, 102);
+    color: rgb(0, 0, 0);
+    transform: scale(1.02);
+  }
+  
